@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/red"
+    android:orientation="vertical"
+    tools:context=".SignIn">
+
+    <ImageView
+        android:layout_width="284dp"
+        android:layout_height="166dp"
+        android:layout_marginTop="@dimen/margin_top"
+        android:layout_gravity="center"
+        android:src="@drawable/ic_baseline_person_pin_24" />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margin_start_and_end"
+        android:layout_marginTop="80dp"
+        android:layout_marginEnd="@dimen/margin_start_and_end"
+        android:backgroundTint="@color/white"
+        android:hint="@string/full_name"
+        android:paddingStart="130dp"
+        android:paddingBottom="@dimen/padding_bottom"
+        android:textColorHint="@color/white" />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margin_start_and_end"
+        android:layout_marginEnd="@dimen/margin_start_and_end"
+        android:backgroundTint="@color/white"
+        android:hint="@string/email"
+        android:paddingStart="110dp"
+        android:paddingBottom="@dimen/padding_bottom"
+        android:textColorHint="@color/white" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margin_start_and_end"
+        android:layout_marginEnd="@dimen/margin_start_and_end"
+        android:backgroundTint="@color/red"
+        android:hint="********"
+        android:paddingStart="135dp"
+        android:textColorHint="@color/white" />
+    <Button
+        android:id="@+id/register_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margin_start_and_end"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="@dimen/margin_start_and_end"
+        android:background="@drawable/rounded_corners_signin_button"
+        android:text="@string/register"
+        android:textColor="@color/white"
+        app:backgroundTint="@null" />
+
+    <Button
+        android:id="@+id/cancel_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/light_black"
+        android:text="@string/cancel"
+        android:layout_marginTop="140dp"
+        android:textColor="@color/white"/>
+</LinearLayout>
